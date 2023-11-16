@@ -6,11 +6,6 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%
-    // 자바 코드를 넣을 수 있음
-    //request, response => 내장 객체
-
-%>
 <!doctype html>
 <html lang="en">
 <head>
@@ -23,7 +18,7 @@
 <body>
 <div id="container">
     <h3>Very Simple Calculator</h3>
-    <form action="/calc" method="get">
+    <form action="calc" method="get">
         <div>
             <input type="number" name="num1">
             <select name="op">
@@ -35,7 +30,7 @@
             <input type="number" name="num2">
         </div>
         <div>
-            <input type="submit" value="=">
+            <input type="submit" value="="> <%=request.getAttribute("result")%>
         </div>
     </form>
 </div>
