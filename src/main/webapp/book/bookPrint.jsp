@@ -1,10 +1,11 @@
-<%@ page import="java.util.HashMap" %>
-<%@ page import="com.example.jspbasic.Book" %>
+
 <%@ page import="java.util.Set" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="com.example.jspbasic.book.Book" %>
+<%@ page import="java.util.HashMap" %>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%
-    HashMap<Long, Book> hm = (HashMap<Long, Book>) request.getAttribute("hm");
-    Set<Long> keys = hm.keySet();
+    HashMap<Long, Book> book = (HashMap<Long, Book>) request.getAttribute("no");
+    Set<Long> keys = book.keySet();
 %>
 <!doctype html>
 <html lang="en">
@@ -16,19 +17,19 @@
     <title>도서관리 프로그램</title>
 </head>
 <body>
-<h3>도서관리 프로그램</h3>
+<h3> 도서 목록 </h3>
 <div id="container">
-    <% for (Long b: keys) { %>
-    <div class="book"> 번호: <%=hm.get(b).getno()%>
-        제목 <%=hm.get(b).getName()%>
-        저자 <%=hm.get(b).getAuthor()%>
-        출판일 <%=hm.get(b).getPublishedDate()%>
-        <a href="/book-update">수정</a> <a href="/book-delete">삭제</a></div>
+    <% for(Long key : keys){ %>
+    <div class="book">
+        No. <%=book.get(key).getNo()%>
+        [제목] <%=book.get(key).getName()%>
+        [저자] <%=book.get(key).getAuthor()%>
+        [출판일] <%=book.get(key).getPublishedDate()%> <a href="/book/bookUpdate">수정</a> <a href="/book/bookRemove">삭제</a></div>
     <% } %>
 </div>
-<form action="addBook.html" method="post">
+<form action="/book/bookMain.html" method="post">
     <div>
-        <input type="submit" value="처음화면으로 돌아가기">
+        <input type="submit" value="메인으로 돌아가기">
     </div>
 </form>
 </body>
@@ -62,7 +63,7 @@
     }
     .book {
         padding: 3px 3px;
-        border-style: solid;
+        border-style: groove;
     }
 </style>
 </html>

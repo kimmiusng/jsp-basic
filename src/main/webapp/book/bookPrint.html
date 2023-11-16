@@ -8,14 +8,14 @@
     <title>도서관리 프로그램</title>
 </head>
 <body>
-<h3>도서관리 프로그램</h3>
+<h3> 도서 목록 </h3>
 <div id="container">
     <div class="book"> 제목 : 저자 : 출판일 <a href="/book-update">수정</a> <a href="/book-delete">삭제</a></div>
     <div class="book"> 제목 : 저자 : 출판일 <a href="/book-update">수정</a> <a href="/book-delete">삭제</a></div>
 </div>
-<form action="addBook.html" method="post">
+<form action="/book/bookMain.html" method="post">
     <div>
-        <input type="submit" value="처음화면으로 돌아가기">
+        <input type="submit" value="메인으로 돌아가기">
     </div>
 </form>
 </body>
@@ -49,7 +49,7 @@
     }
     .book {
         padding: 3px 3px;
-        border-style: solid;
+        border-style: groove;
     }
 </style>
 </html>

@@ -1,19 +1,26 @@
-package com.example.jspbasic;
+package com.example.jspbasic.book;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Book {
-    private Long no;
-    private String name;
-    private String author;
-    private LocalDate publishedDate;
 
-    public Long getno() {
+    Long no;
+    String name;
+    String author;
+    LocalDate publishedDate;
+
+    public Book(Long no, String name, String author, LocalDate publishedDate) {
+        this.no = no;
+        this.name = name;
+        this.author = author;
+        this.publishedDate = publishedDate;
+    }
+
+    public Long getNo() {
         return no;
     }
 
-    public void setno(Long no) {
+    public void setNo(Long no) {
         this.no = no;
     }
 
@@ -40,15 +47,4 @@ public class Book {
     public void setPublishedDate(LocalDate publishedDate) {
         this.publishedDate = publishedDate;
     }
-
-    public Book(Long no, String name, String author, LocalDate publishedDate) {
-        this.no = no;
-        this.name = name;
-        this.author = author;
-        this.publishedDate = publishedDate;
-
-
-    }
 }
-
-
