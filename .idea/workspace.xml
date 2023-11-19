@@ -9,25 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ff6df8d-9437-4007-bb9d-60660156109a" name="Changes" comment="20231115">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jspbasic/book/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jspbasic/book/BookAdd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jspbasic/book/BookMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/book/bookAdd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/book/bookMain.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/book/bookPrint.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/book/bookPrint.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2ff6df8d-9437-4007-bb9d-60660156109a" name="Changes" comment="20231116 도서관리서블릿 재정리">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jspbasic/practice/findNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jspbasic/practice/smartCalc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/practice/find-number.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/practice/smart-calc.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jspbasic/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jspbasic/BookAdd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jspbasic/BookMain.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/addBook.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bookMain.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bookMain.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/printBook.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/printBook.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
         <option value="Jsp File" />
       </list>
     </option>
@@ -197,7 +185,8 @@
       <workItem from="1700031088622" duration="6654000" />
       <workItem from="1700093054461" duration="27154000" />
       <workItem from="1700131106295" duration="3824000" />
-      <workItem from="1700137843549" duration="5470000" />
+      <workItem from="1700137843549" duration="5613000" />
+      <workItem from="1700284046245" duration="2360000" />
     </task>
     <task id="LOCAL-00001" summary="20231115">
       <option name="closed" value="true" />
@@ -207,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700037595951</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="20231116 도서관리서블릿 재정리">
+      <option name="closed" value="true" />
+      <created>1700144770376</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700144770376</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +223,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="20231115" />
-    <option name="LAST_COMMIT_MESSAGE" value="20231115" />
+    <MESSAGE value="20231116 도서관리서블릿 재정리" />
+    <option name="LAST_COMMIT_MESSAGE" value="20231116 도서관리서블릿 재정리" />
   </component>
 </project>
